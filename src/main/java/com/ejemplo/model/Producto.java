@@ -1,6 +1,11 @@
 package com.ejemplo.model;
 
+/**
+ * Modelo que representa un producto del catálogo.
+ * Sin setters para garantizar inmutabilidad del catálogo.
+ */
 public class Producto {
+
     private int id;
     private String nombre;
     private String categoria;

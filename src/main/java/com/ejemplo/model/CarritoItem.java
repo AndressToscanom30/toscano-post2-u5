@@ -1,6 +1,11 @@
 package com.ejemplo.model;
 
+/**
+ * Representa un item dentro del carrito de compras,
+ * asociando un producto con su cantidad seleccionada.
+ */
 public class CarritoItem {
+
     private Producto producto;
     private int cantidad;
 
@@ -21,6 +26,7 @@ public class CarritoItem {
         this.cantidad = cantidad;
     }
 
+    // Calcula el subtotal de este item
     public double getSubtotal() {
         return producto.getPrecio() * cantidad;
     }
